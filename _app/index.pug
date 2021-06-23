@@ -1,0 +1,46 @@
+-var path = '';
+-var head_url = 'https://sochi5.mycapitalland.ru/';
+-var head_title = '«Пассивный доход на инвестициях в недвижимость Сочи – это просто!»';
+-var head_description = 'Онлайн-встреча с инвестором Юрием Медушенко';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var fav_ap = path+'favicon.svg';
+-var scripts = path+'js/scripts.js';
+-var form_target = '_blank';
+-var politics = 'https://sochi.mycapitalland.ru/politics.pdf';
+-var fbTag = true;
+-var action = 'https://mycapital.autoweboffice.ru/?r=personal/newsletter/sub/add&id=28323&lg=ru&Contact[id_newsletter]=';
+-var group = '39';
+-var formId = '29';
+-var formVc = '987314044';
+-var form_target = '_blank';
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)
+		span=h3
+mixin b(cl,clb,href='#Modal',p,target,id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href=href target=target id=id)=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+<?php require('date/date.php');?>
+|
+|
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/scripts/head_scripts
+		include pug/head
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-video
+			include pug/main/3-about
+			include pug/main/4-plan
+			include pug/main/5-author
+		include pug/main/6-modal
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		include pug/scripts/body_bottom_scripts

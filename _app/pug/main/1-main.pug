@@ -1,0 +1,37 @@
+section#main
+	include ../base/1-header
+	.container
+		.row
+			.col-md-8
+				.content-main
+					p.main-pre Онлайн-встреча с инвестором 
+						span Юрием Медушенко
+					h1.main-title «Пассивный доход 
+						br
+						| на инвестициях 
+						br
+						| в недвижимость Сочи»
+					h2.main-subtitle Мы уже научились! Научим и вас!
+					.row
+						.col-md-5
+							.main-info
+								+imgs('main-info-img', 'img/images/money.png', 'Деньги')
+								p.main-info-text
+									span Доходность
+									| – до 153% за год!
+						.col-md-6.col-md-offset-1
+							.main-info
+								+imgs('main-info-img', 'img/images/money.png', 'Деньги')
+								p.main-info-text
+									span Минимальная 
+										br
+										| сумма вложений
+									| – 500 тыс. руб.
+			.col-md-4
+				.main-img
+					+imgs('', 'img/images/main.png', 'Коллаж')
+		.main-date
+			p.main-date-text Дата и время проведения: 
+				span <?= $dateDay1Text;?> <?= $dateMonthText;?>, в 19:00 (Мск)
+	.main-cta
+		p.main-cta-text Пусть ваши деньги зарабатывают для вас!

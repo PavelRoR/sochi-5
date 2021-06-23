@@ -1,0 +1,77 @@
+.button
+	display inline-block
+	border-radius: 7px 35px;
+	box-shadow: inset 0px 1px 0px 0px rgba(247, 243, 170, 0.04);
+	padding 25px 35px
+	background-color: #ffba00
+	background-image: linear-gradient(to bottom, #fcdc6b,#ffba00)
+	font-family: M
+	transition: all .3s ease
+	box-shadow: 0 4px 0 0 #d49c05, 0px 3px 4.25px 0.75px rgba(196, 145, 7, 0.4),inset 0px 1px 0px 0px rgba(247, 243, 170, 0.04);
+	text-align center
+	&:focus
+		text-decoration none
+		color #000
+		background-color: #ffba00
+		background-image: linear-gradient(to bottom, #fcdc6b,#ffba00)
+	&:hover
+		text-decoration none
+		color #000
+		background-color: #ffba00
+		background-image: linear-gradient(to top, #fcdc6b,#ffba00)
+		border-radius: 35px 7px
+		transform: translateY(4px)
+		box-shadow: 0 0 0 0 #d49c05, 0px 3px 2.25px 0.75px rgba(196, 145, 7, 0.4),inset 0px 1px 0px 0px rgba(247, 243, 170, 0.04);
+	&-wrapper
+		position relative
+		&-center
+			text-align center
+.general-wrapper
+	padding 35px 20px
+	border-radius: 8px
+	border 2px dashed #BDBDBD
+	box-shadow: 0 0 0 12px #fff
+	background-color #fff
+	box-shadow: 0 0 0 10px #fff, 0px 3px 46.92px 4.08px rgba(0, 0, 0, 0.22);
+	position relative
+	z-index 30
+	@media screen and (max-width 560px)
+		padding 20px
+	&-title
+		font-size: 30px
+		font-weight: 900
+		margin-bottom: 40px
+		@media screen and (max-width 991px)
+			br
+				display none
+		@media screen and (max-width 560px)
+			font-size: 24px
+			margin-bottom 30px
+	&-list
+		li
+			list-style: none
+			padding-left: 25px
+			margin-bottom 30px
+			position relative
+			&:last-child
+				margin-bottom 0
+			&:before
+				content: ''
+				display block
+				position absolute
+				width 12px
+				height: 12px
+				border-radius: 50px
+				background-color #0f1f2f
+				top 8px
+				left 0
+			@media screen and (max-width 560px)
+				margin-bottom 15px
+	&-aftertext
+		font-size: 20px
+		font-weight: bold
+		text-transform uppercase
+		margin 30px 0 40px
+		@media screen and (max-width 560px)
+			font-size: 18px
+			margin 20px 0 30px

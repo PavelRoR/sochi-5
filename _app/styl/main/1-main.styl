@@ -1,0 +1,126 @@
+#main
+	padding 0 0 120px
+	background-color: #A6D2E6
+	background-image: url(../img/backs/main.png)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	margin-bottom: 50px
+	@media screen and (max-width 991px)
+		background-position: bottom left
+		text-align center
+	@media screen and (max-width 560px)
+		padding 0 0 60px
+	@media screen and (max-width 385px)
+		padding 0 0 40px
+.content-main
+	position relative
+	z-index 20
+// .contaier-main
+// 	position relative
+// 	z-index 20
+.main
+	&-pre
+		text-transform uppercase
+		span
+			display inline-block
+			padding 10px
+			border-radius: 7px
+			background-color #E80F0F
+			color #fff
+	&-title
+		font-size: 35px
+		font-weight: 900
+		text-transform uppercase
+		@media screen and (max-width 991px)
+			font-size: 36px
+			br
+				display none
+		@media screen and (max-width 560px)
+			font-size: 32px
+			margin-top 10px
+		@media screen and (max-width 385px)
+			font-size: 26px
+			line-height 1.2
+	&-subtitle
+		font-size: 25px
+		font-weight: bold
+		margin 50px 0
+		@media screen and (max-width 991px)
+			font-size: 22px
+			margin 30px 0
+		@media screen and (max-width 560px)
+			margin 20px 0
+		@media screen and (max-width 385px)
+			font-size: 20px
+	&-info
+		border-radius: 7px;
+		box-shadow: 0px 0px 20.64px 3.36px rgba(0, 0, 0, 0.16);
+		width 100%
+		max-width: 463px
+		position relative
+		background-color: rgba(#0f1f2f,.9)
+		padding 30px 25px
+		@media screen and (max-width 991px)
+			max-width 480px
+			margin 0 auto 50px
+		@media screen and (max-width 385px)
+			padding 20px 20px 30px
+		&-img
+			position absolute
+			right -35px
+			bottom -30px
+			@media screen and (max-width 991px)
+				bottom -50px
+		&-text
+			font-size: 20px
+			text-transform uppercase
+			font-weight: bold
+			color: #fff
+			span
+				display block
+				font-size: 30px
+				font-weight: 900
+			@media screen and (max-width 385px)
+				font-size: 18px
+				span
+					font-size: 26px
+					line-height: 30px
+					margin-bottom 10px
+	&-date
+		display inline-block
+		background-color: rgba(#fff, .9)
+		margin-top: 35px
+		padding 10px 25px
+		border-radius: 7px
+		color #000
+		text-transform uppercase
+		font-weight: bold
+		box-shadow: 0px 0px 20.64px 3.36px rgba(0, 0, 0, 0.16);
+		position relative
+		z-index 20
+		&-text
+			span
+				display inline-block
+	&-img
+		position relative
+		padding-top: 100%
+		img
+			position absolute
+			left -420px
+			top -50px
+			z-index 0
+	&-cta
+		width 100%
+		position absolute
+		font-size: 25px
+		text-align center
+		padding 15px
+		text-transform uppercase
+		background-color: #298d60
+		bottom: -50px
+		left 0
+		right 0
+		color #fff
+		letter-spacing: 1px

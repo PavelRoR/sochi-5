@@ -1,0 +1,72 @@
+mixin l(n, p)
+	.col-md-4
+		.lesson(class="lesson-"+n)
+			p.lesson-text!=p
+section#about
+	+imgs('balloon', 'img/images/airballoon.png', 'Воздушный шар')
+	+imgs('birds', 'img/images/birds.png', 'Птицы')
+	#info
+		.container
+			.numbers
+				h4.numbers-title Сочи – регион №1 по темпам роста цен 
+					br
+					| на землю и жилые объекты
+				.row
+					.col-md-6
+						.row
+							.col-md-6
+								.number
+									h4.number-title в
+										span 3-5
+										| раз
+									p.number-text Стоимость участков на популярных направлениях увеличилась с конца 2020г. 
+										span в 3-5 раз
+							.col-md-6
+								.number
+									h4.number-title
+										span 30%
+									p.number-text Спрос на жилую недвижимость с начала 2021г. 
+										span вырос на 30%
+						.row
+							.col-md-6
+								.number
+									h4.number-title
+										span + 30%
+									p.number-text К концу года ещё ожидается 
+										span 30%-й рост
+										|  цен на недвижимость!
+							.col-md-6
+								.number
+									h4.number-title
+										span 500
+										|ТЫС. руб.
+									p.number-text Цены за 1 кв.м. в некоторых районах достигли уровня Москвы 
+										span – около 500 тыс. руб. за 1 кв.м.
+						+b('button-wrapper-center', 'button-up', href, 'Зарегистрироваться на онлайн-встречу')
+					.col-md-6
+						.numbers-img
+							+imgs('', 'img/images/man.png', 'Мужик')
+							.numbers-cta
+								h5.numbers-cta-title Зарабатывайте 
+									br
+									| до 50% на одном проекте!
+								p.numbers-cta-text УЗНАЙТЕ ПОДРОБНОСТИ 
+									br
+									| У НАШЕГО ЭКСПЕРТА ВО ВРЕМЯ ВЕБИНАРА!
+	#plan
+		.container
+			h3.plan-title Программа онлайн-встречи
+			.row
+				+l('1', 'Космические цены: <br>400 тыс.руб. за 1 кв.м. <br>– это не предел')
+				+l('2', 'ИЖС: преимущества <br>и доходность')
+				+l('3', 'Сочи — перспективный регион для инвестиций')
+			.row
+				+l('4', 'Наша инвестиционная стратегия с доходностью до 153% в год')
+				+l('5', 'Сколько можно заработать на 1 кв.м. <br>в Сочи')
+				+l('6', 'Презентация нового инвестпроекта<br> по доходной недвижимости в Сочи')
+			+b('button-wrapper-center', 'button-up', href, 'Хочу посетить онлайн-встречу')
+			.plan-bq
+				+imgs('plan-bq-img', 'img/images/ambrella.png', 'Зонт')
+				p.plan-bq-text Инвестиции в недвижимость Сочи 
+					br
+					| – доходный инструмент с высокими показателями!

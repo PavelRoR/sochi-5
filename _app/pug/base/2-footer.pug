@@ -1,0 +1,37 @@
+mixin sl(cl,sLink)
+	a.soc-link(class!='soc-link-'+cl href!=sLink target="_blank")
+
+footer
+	.container
+		.row
+			.col-md-8
+				h5.footer-title Подписывайтесь на новости, 
+					br
+					| чтобы всегда быть в курсе самых лучших предложений по инвестированию
+			.col-md-4
+				.soc-links
+					|
+					|
+					+sl('vk','https://vk.com/mycapital_ru')
+					|
+					|
+					+sl('yt','https://www.youtube.com/channel/UCeQu4s1IZ6c-w-K8q15wF1w')
+					|
+					|
+					+sl('insta','https://www.instagram.com/mycapital.ru/')
+					|
+					|
+					+sl('tg','https://t.me/mycapitalbot')
+					|
+					|
+					+sl('fb','https://facebook.com/MyCapitalRu/')
+		.row
+			.col-md-8
+				p.footer-text Контакты: ООО «Зона Комфорта», ИНН 5029196740, ОГРН 1155029003293
+				p.footer-text.footer-text-linked Телефон: 
+					a(href='tel:+74950230110') +7 (495) 023-01-10
+				p.footer-text.footer-text-linked E-mail: 
+					a(href='mailto:info@mycapital.fund') info@mycapital.fund
+			.col-md-4
+				p.footer-text.footer-text-politics
+					a(href='https://sochi.mycapitalland.ru/politics.pdf' target='_blank') Политика конфиденциальности
